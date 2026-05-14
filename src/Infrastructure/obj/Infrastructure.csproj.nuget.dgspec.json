@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\2-back-end\\5-BankingSystem\\src\\Infrastructure\\Infrastructure.csproj": {}
+  },
+  "projects": {
+    "F:\\2-back-end\\5-BankingSystem\\src\\Infrastructure\\Infrastructure.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\2-back-end\\5-BankingSystem\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "F:\\2-back-end\\5-BankingSystem\\src\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Aya Atef\\.nuget\\packages\\",
+        "outputPath": "F:\\2-back-end\\5-BankingSystem\\src\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Aya Atef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        }
+      }
+    }
+  }
+}
