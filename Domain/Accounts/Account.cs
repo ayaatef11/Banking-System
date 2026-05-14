@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using Domain.Transactions;
 
 namespace Domain.Accounts;

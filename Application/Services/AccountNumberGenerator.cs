@@ -5,12 +5,7 @@ namespace Application.Services;
 
 public class AccountNumberGenerator : IAccountNumberGenerator
 {
-    private const int AccountNumberLength = 10;
-
-    /// <summary>
-    /// Generates a cryptographically secure random account number of 10 digits
-    /// </summary>
-    /// <returns>A string containing a random 10-digit account number</returns>
+    private const int AccountNumberLength = 10; 
     public string Generate()
     {
         return string.Create<object?>(AccountNumberLength, null, (span, _) =>

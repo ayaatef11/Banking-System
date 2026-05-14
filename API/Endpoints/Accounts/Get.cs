@@ -19,7 +19,7 @@ internal sealed class Get : IEndpoint
 
             return result.Match(Results.Ok, CustomResults.Problem);
         })
-        .HasApiVersion(1.0)
+        //.HasApiVersion(1.0)
         .Produces<List<AccountResponse>>(StatusCodes.Status200OK)
         .WithSummary("Get all accounts")
         .WithDescription("Retrieves the details of all accounts.")

@@ -6,14 +6,9 @@ using Shared;
 
 namespace Application.Features.Transactions.Deposit;
 
-public sealed class DepositTransactionCommandHandler(
-    IValidationService validationService,
-    IAccountService accountService,
-    ITransactionService transactionService)
-    : ICommandHandler<DepositTransactionCommand, TransactionResponse>
+public sealed class DepositTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService): ICommandHandler<DepositTransactionCommand, TransactionResponse>
 {
-    public async Task<Result<TransactionResponse>> Handle(DepositTransactionCommand command,
-        CancellationToken cancellationToken)
+    public async Task<Result<TransactionResponse>> Handle(DepositTransactionCommand command,CancellationToken cancellationToken)
     {
         Account? account = await accountService.GetAccountByIdAsync(command.AccountId, cancellationToken);
 

@@ -12,10 +12,8 @@ internal sealed class Deposit : IEndpoint
 {
     public void MapEndpoint(IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapPost("/transactions/deposit",
-                async (DepositTransactionRequest request, ISender sender,
-                    IMapper<DepositTransactionRequest, DepositTransactionCommand> mapper,
-                    CancellationToken cancellationToken) =>
+        endpoints.MapPost("/transactions/deposit",async (DepositTransactionRequest request, ISender sender,
+                    IMapper<DepositTransactionRequest, DepositTransactionCommand> mapper,CancellationToken cancellationToken) =>
                 {
                     DepositTransactionCommand command = mapper.Map(request);
 
@@ -23,7 +21,7 @@ internal sealed class Deposit : IEndpoint
 
                     return result.Match(Results.Ok, CustomResults.Problem);
                 })
-            .HasApiVersion(1.0)
+            //.HasApiVersion(1.0)
             .Produces<TransactionResponse>()
             .WithSummary("Create a new deposit transaction")
             .WithDescription("Creates a new deposit transaction for the specified account.")

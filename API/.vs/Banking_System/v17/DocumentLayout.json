@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\2-back-end\\Banking_System\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\banking_system\\api\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\banking_system\\api\\endpoints\\accounts\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:endpoints\\accounts\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EndpointExtensions.cs",
+              "DocumentMoniker": "F:\\2-back-end\\Banking_System\\API\\Extensions\\EndpointExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\EndpointExtensions.cs",
+              "ToolTip": "F:\\2-back-end\\Banking_System\\API\\Extensions\\EndpointExtensions.cs",
+              "RelativeToolTip": "Extensions\\EndpointExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:59:33.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cs",
+              "DocumentMoniker": "F:\\2-back-end\\Banking_System\\API\\Endpoints\\Accounts\\Create.cs",
+              "RelativeDocumentMoniker": "Endpoints\\Accounts\\Create.cs",
+              "ToolTip": "F:\\2-back-end\\Banking_System\\API\\Endpoints\\Accounts\\Create.cs",
+              "RelativeToolTip": "Endpoints\\Accounts\\Create.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:58:06.316Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

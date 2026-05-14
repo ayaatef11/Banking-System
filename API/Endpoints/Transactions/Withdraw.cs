@@ -21,7 +21,7 @@ internal sealed class Withdraw : IEndpoint
 
                 return result.Match(Results.Ok, CustomResults.Problem);
             })
-            .HasApiVersion(1.0)
+            //.HasApiVersion(1.0)
             .Produces<AccountResponse>()
             .WithSummary("Create a new withdraw transaction")
             .WithDescription("Creates a new withdraw transaction for the specified account.")

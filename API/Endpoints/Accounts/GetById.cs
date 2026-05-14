@@ -20,7 +20,7 @@ internal sealed class GetById : IEndpoint
 
                 return result.Match(Results.Ok, CustomResults.Problem);
             })
-            .HasApiVersion(1.0)
+            //.HasApiVersion(1.0)
             .Produces<AccountResponse>(StatusCodes.Status200OK)
             .WithSummary("Get an account by ID")
             .WithDescription("Retrieves the details of an account by its unique identifier.")

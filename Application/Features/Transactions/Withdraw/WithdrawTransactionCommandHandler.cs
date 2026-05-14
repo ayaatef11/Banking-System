@@ -13,15 +13,10 @@ using Shared;
 
 namespace Application.Features.Transactions.Withdraw;
 
-public sealed class WithdrawTransactionCommandHandler(
-    IValidationService validationService,
-    IAccountService accountService,
-    ITransactionService transactionService
-    )
+public sealed class WithdrawTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService)
     : ICommandHandler<WithdrawTransactionCommand, TransactionResponse>
 {
-    public async Task<Result<TransactionResponse>> Handle(WithdrawTransactionCommand command,
-        CancellationToken cancellationToken)
+    public async Task<Result<TransactionResponse>> Handle(WithdrawTransactionCommand command,CancellationToken cancellationToken)
     {
         Account? account = await accountService.GetAccountByIdAsync(command.AccountId, cancellationToken);
 

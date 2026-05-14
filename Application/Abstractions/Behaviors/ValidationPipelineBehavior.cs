@@ -6,15 +6,9 @@ using Shared;
 
 namespace Application.Abstractions.Behaviors;
 
-internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
-    IEnumerable<IValidator<TRequest>> validators)
-    : IPipelineBehavior<TRequest, TResponse>
-    where TRequest : class
+internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(IEnumerable<IValidator<TRequest>> validators): IPipelineBehavior<TRequest, TResponse> where TRequest : class
 {
-    public async Task<TResponse> Handle(
-        TRequest request,
-        RequestHandlerDelegate<TResponse> next,
-        CancellationToken cancellationToken)
+    public async Task<TResponse> Handle( TRequest request,RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
         ValidationFailure[] validationFailures = await ValidateAsync(request);
 
@@ -23,8 +17,7 @@ internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
             return await next();
         }
 
-        if (typeof(TResponse).IsGenericType &&
-            typeof(TResponse).GetGenericTypeDefinition() == typeof(Result<>))
+        if (typeof(TResponse).IsGenericType && typeof(TResponse).GetGenericTypeDefinition() == typeof(Result<>))
         {
             Type resultType = typeof(TResponse).GetGenericArguments()[0];
 
@@ -34,9 +27,7 @@ internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
 
             if (failureMethod is not null)
             {
-                return (TResponse)failureMethod.Invoke(
-                    null,
-                    [CreateValidationError(validationFailures)]);
+                return (TResponse)failureMethod.Invoke(null,[CreateValidationError(validationFailures)]);
             }
         }
         else if (typeof(TResponse) == typeof(Result))
@@ -56,8 +47,7 @@ internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
 
         var context = new ValidationContext<TRequest>(request);
 
-        ValidationResult[] validationResults = await Task.WhenAll(
-            validators.Select(validator => validator.ValidateAsync(context)));
+        ValidationResult[] validationResults = await Task.WhenAll(validators.Select(validator => validator.ValidateAsync(context)));
 
         ValidationFailure[] validationFailures = validationResults
             .Where(validationResult => !validationResult.IsValid)
