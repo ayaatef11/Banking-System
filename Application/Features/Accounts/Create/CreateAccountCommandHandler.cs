@@ -1,6 +1,8 @@
+using Application.Common.Mappings;
+
 namespace Application.Features.Accounts.Create;
 
-public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IAccountNumberGenerator accountNumberGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
+public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IMapper<Account,AccountResponse>mapper,IAccountNumberGenerator accountNumberGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
 {
     public async Task<Result<AccountResponse>> Handle(CreateAccountCommand command, CancellationToken cancellationToken)
     { 
@@ -16,15 +18,7 @@ public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IA
 
         context.Accounts.Add(account);
         await context.SaveChangesAsync(cancellationToken);
-
-        var response = new AccountResponse(
-            account.Id,
-            account.OwnerName,
-            account.AccountType.GetDisplayName(),
-            account.Balance,
-            account.AccountNumber,
-            account.CreatedAt
-        );
+        AccountResponse response = mapper.Map(account);
 
         return Result.Success(response);
     }

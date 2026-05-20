@@ -1,21 +1,18 @@
+using Application.Common.Mappings;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.Features.Accounts.Get;
 
-public sealed class GetAccountQueryHandler(IApplicationDbContext context): IQueryHandler<GetAccountQuery, List<AccountResponse>>
+public sealed class GetAccountQueryHandler(IApplicationDbContext context, IMapper<Account, AccountResponse> mapper) : IQueryHandler<GetAccountQuery, List<AccountResponse>>
 {
     public async Task<Result<List<AccountResponse>>> Handle(GetAccountQuery query, CancellationToken cancellationToken)
     {
-        List<AccountResponse> accounts = await context.Accounts
-            .AsNoTracking()
-            .Select(acc => new AccountResponse(
-                acc.Id,
-                acc.OwnerName,
-                acc.AccountType.GetDisplayName(),
-                acc.Balance, acc.AccountNumber,
-                acc.CreatedAt)
-            ).ToListAsync(cancellationToken);
+        List<Account> accounts = await context.Accounts.AsNoTracking()
+     .ToListAsync(cancellationToken);
 
-        return accounts;
+        List<AccountResponse> result = accounts.Select(mapper.Map)
+            .ToList();
+
+        return result;
     }
 }

@@ -1,10 +1,11 @@
+using Application.Common.Mappings;
 using Microsoft.EntityFrameworkCore.Storage;
 using Serilog;
 using Shared;
 
 namespace Infrastructure.Services;
 
-public class TransactionService(IApplicationDbContext context, ILogger logger): ITransactionService
+public class TransactionService(IApplicationDbContext context, IMapper<Transaction,TransactionResponse>mapper,ILogger logger): ITransactionService
 {
     public async Task<Result<TransactionResponse>> ProcessDepositAsync(Account account, decimal amount,
         CancellationToken cancellationToken)
@@ -29,13 +30,8 @@ public class TransactionService(IApplicationDbContext context, ILogger logger): 
 
             logger.Information("Deposit successful: Account {AccountId}, Amount {Amount}", account.Id, amount);
 
-            return Result.Success(new TransactionResponse(
-                deposit.Id,
-                deposit.AccountId,
-                deposit.Type.GetDisplayName(),
-                deposit.Amount,
-                deposit.TargetAccountNumber,
-                deposit.CreatedAt));
+            TransactionResponse result = mapper.Map(deposit);
+            return Result.Success(result);
         }
         catch (Exception ex)
         {
@@ -78,24 +74,14 @@ public class TransactionService(IApplicationDbContext context, ILogger logger): 
                 amount,
                 account.Balance);
 
-            var response = new TransactionResponse(
-                withdrawTransaction.Id,
-                withdrawTransaction.AccountId,
-                withdrawTransaction.Type.GetDisplayName(),
-                withdrawTransaction.Amount,
-                withdrawTransaction.TargetAccountNumber,
-                withdrawTransaction.CreatedAt
-            );
+            TransactionResponse response = mapper.Map(withdrawTransaction);
 
             return Result.Success(response);
         }
         catch (Exception ex)
         {
-            logger.Error(
-                ex,
-                "Failed to process withdrawal for account {AccountId}: {Message}",
-                account.Id,
-                ex.Message);
+            logger.Error(ex,"Failed to process withdrawal for account {AccountId}: {Message}",
+                account.Id,ex.Message);
 
             await transaction.RollbackAsync(cancellationToken);
 
