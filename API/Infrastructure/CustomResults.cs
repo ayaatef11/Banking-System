@@ -1,5 +1,3 @@
-using Shared;
-
 namespace Web.Api.Infrastructure;
 
 public static class CustomResults

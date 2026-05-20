@@ -1,9 +1,4 @@
-using Application.Dtos.Account;
-using Application.Features.Accounts.GetById;
 using MediatR;
-using Shared;
-using Web.Api.Extensions;
-using Web.Api.Infrastructure;
 
 namespace Web.Api.Endpoints.Accounts;
 

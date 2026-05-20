@@ -1,10 +1,4 @@
-using Application.Common.Mappings;
-using Application.Dtos.Account;
-using Application.Features.Accounts.Create;
 using MediatR;
-using Shared;
-using Web.Api.Extensions;
-using Web.Api.Infrastructure;
 
 namespace Web.Api.Endpoints.Accounts;
 
@@ -22,7 +16,7 @@ internal sealed class Create : IEndpoint
 
                     return result.Match(Results.Ok, CustomResults.Problem);
                 })
-            .HasApiVersion(1.0)
+            //.HasApiVersion(1.0)
             .Produces<AccountResponse>()
             .WithSummary("Create a new account")
             .WithDescription("Creates a new account with the specified owner name and account type.")

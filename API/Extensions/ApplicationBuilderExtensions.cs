@@ -1,4 +1,3 @@
-using Web.Api.Constants;
 
 namespace Web.Api.Extensions;
 

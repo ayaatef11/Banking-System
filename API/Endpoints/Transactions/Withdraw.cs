@@ -1,10 +1,4 @@
-using Application.Dtos.Account;
-using Application.Dtos.Transaction;
-using Application.Features.Transactions.Withdraw;
 using MediatR;
-using Shared;
-using Web.Api.Extensions;
-using Web.Api.Infrastructure;
 
 namespace Web.Api.Endpoints.Transactions;
 

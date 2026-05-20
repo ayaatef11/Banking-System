@@ -1,7 +1,4 @@
-using Application.Dtos.Account;
-using Application.Features.Accounts.Get;
 using MediatR;
-using Shared;
 using Web.Api.Extensions;
 using Web.Api.Infrastructure;
 
