@@ -8,17 +8,13 @@ namespace Infrastructure;
 public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
-        => services.AddServices()
-            .AddDatabase(configuration);
+        => services.AddServices().AddDatabase(configuration);
 
     private static IServiceCollection AddServices(this IServiceCollection services)
     {
         services.AddScoped<IValidationService, ValidationService>();
         services.AddScoped<IAccountService, AccountService>();
         services.AddScoped<ITransactionService, TransactionService>();
-
-        services.AddSingleton(TimeProvider.System);
-
         return services;
     }
 

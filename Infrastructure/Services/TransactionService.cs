@@ -4,8 +4,7 @@ using Shared;
 
 namespace Infrastructure.Services;
 
-public class TransactionService(IApplicationDbContext context, TimeProvider timeProvider, ILogger logger)
-    : ITransactionService
+public class TransactionService(IApplicationDbContext context, ILogger logger): ITransactionService
 {
     public async Task<Result<TransactionResponse>> ProcessDepositAsync(Account account, decimal amount,
         CancellationToken cancellationToken)
@@ -21,7 +20,7 @@ public class TransactionService(IApplicationDbContext context, TimeProvider time
                 Type = TransactionType.Deposit,
                 Amount = amount,
                 TargetAccountNumber = account.AccountNumber,
-                CreatedAt = timeProvider.GetUtcNow()
+                CreatedAt = DateTime.UtcNow
             };
 
             context.Transactions.Add(deposit);
@@ -64,7 +63,7 @@ public class TransactionService(IApplicationDbContext context, TimeProvider time
                 Type = TransactionType.Withdraw,
                 Amount = amount,
                 TargetAccountNumber = account.AccountNumber,
-                CreatedAt = timeProvider.GetUtcNow()
+                CreatedAt = DateTime.UtcNow
             };
 
             account.Balance -= amount;
