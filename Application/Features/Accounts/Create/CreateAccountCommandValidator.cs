@@ -1,4 +1,3 @@
-using Application.Features.Accounts.Create;
 using FluentValidation;
 
 namespace Application.Features.Accounts.Create;

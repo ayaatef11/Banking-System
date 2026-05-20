@@ -1,9 +1,3 @@
-using Application.Abstractions.Messaging;
-using Application.Common.Interfaces;
-using Application.Dtos.Transaction;
-using Domain.Accounts;
-using Shared;
-
 namespace Application.Features.Transactions.Deposit;
 
 public sealed class DepositTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService): ICommandHandler<DepositTransactionCommand, TransactionResponse>

@@ -1,10 +1,4 @@
-using Application.Abstractions.Data;
-using Application.Abstractions.Messaging;
-using Application.Dtos.Account;
-using Domain.Accounts;
-using Domain.Extensions;
 using Microsoft.EntityFrameworkCore;
-using Shared;
 
 namespace Application.Features.Accounts.GetById;
 

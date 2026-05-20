@@ -1,7 +1,3 @@
-using Application.Abstractions.Messaging;
-using Application.Dtos.Account;
-using Domain.Accounts;
-
 namespace Application.Features.Accounts.Create;
 
 public sealed class CreateAccountCommand : ICommand<AccountResponse>

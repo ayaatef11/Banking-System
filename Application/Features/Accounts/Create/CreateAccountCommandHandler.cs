@@ -1,17 +1,6 @@
-using Application.Abstractions.Data;
-using Application.Abstractions.Messaging;
-using Application.Dtos.Account;
-using Application.Interfaces;
-using Domain.Accounts;
-using Domain.Constants;
-using Domain.Extensions;
-using Shared;
-
 namespace Application.Features.Accounts.Create;
 
-public sealed class CreateAccountCommandHandler(
-    IApplicationDbContext context,
-    IAccountNumberGenerator accountNumberGenerator,
+public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IAccountNumberGenerator accountNumberGenerator,
     TimeProvider timeProvider,
     IGuidGenerator guidGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
 {

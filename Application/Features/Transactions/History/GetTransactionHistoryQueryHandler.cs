@@ -1,10 +1,4 @@
-using Application.Abstractions.Data;
-using Application.Abstractions.Messaging;
-using Application.Dtos.Transaction;
-using Domain.Extensions;
-using Domain.Transactions;
 using Microsoft.EntityFrameworkCore;
-using Shared;
 
 namespace Application.Features.Transactions.History;
 
