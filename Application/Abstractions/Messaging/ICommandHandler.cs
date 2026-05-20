@@ -1,5 +1,4 @@
 using MediatR;
-using Shared;
 
 namespace Application.Abstractions.Messaging;
 

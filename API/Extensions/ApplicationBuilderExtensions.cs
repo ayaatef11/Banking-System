@@ -10,7 +10,7 @@ public static class ApplicationBuilderExtensions
         {
             options.SwaggerEndpoint(SwaggerConstants.EndpointUrl, SwaggerConstants.EndpointName);
             options.RoutePrefix = SwaggerConstants.RoutePrefix;
-            options.DocumentTitle = "Mini Banking API Documentation";
+            options.DocumentTitle = "Banking API Documentation";
         });
 
         return app;

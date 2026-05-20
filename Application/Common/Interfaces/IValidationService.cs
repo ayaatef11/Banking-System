@@ -1,5 +1,3 @@
-using Shared;
-
 namespace Application.Common.Interfaces;
 
 public interface IValidationService

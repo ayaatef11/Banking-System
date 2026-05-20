@@ -1,3 +1,4 @@
+using Asp.Versioning;
 using System.Reflection;
 
 namespace Web.Api.Extensions;
@@ -6,17 +7,17 @@ internal static class ServiceCollectionExtensions
 {
    internal static IServiceCollection AddVersioning(this IServiceCollection services)
     {
-        /*services*//*.AddApiVersioning(options =>
+        services.AddApiVersioning(options =>
         {
             options.DefaultApiVersion = new ApiVersion(1, 0);
             options.AssumeDefaultVersionWhenUnspecified = true;
             options.ReportApiVersions = true;
-        })
-        *//*AddApiExplorer(options =>
+        }).
+        AddApiExplorer(options =>
         {
             options.GroupNameFormat = "'v'VVV";
             options.SubstituteApiVersionInUrl = true;
-        })*/
+        });
 
         return services;
     }

@@ -11,8 +11,7 @@ public static class EndpointExtensions
     {
         ServiceDescriptor[] serviceDescriptors = assembly
             .DefinedTypes
-            .Where(type => type is { IsAbstract: false, IsInterface: false } &&
-                           type.IsAssignableTo(typeof(IEndpoint)))
+            .Where(type => type is { IsAbstract: false, IsInterface: false } &&type.IsAssignableTo(typeof(IEndpoint)))
             .Select(type => ServiceDescriptor.Transient(typeof(IEndpoint), type))
             .ToArray();
 
@@ -21,9 +20,7 @@ public static class EndpointExtensions
         return services;
     }
 
-    public static IApplicationBuilder MapEndpoints(
-        this WebApplication app,
-        RouteGroupBuilder routeGroupBuilder)
+    public static IApplicationBuilder MapEndpoints(this WebApplication app,RouteGroupBuilder routeGroupBuilder)
     {
         IEnumerable<IEndpoint> endpoints = app.Services.GetRequiredService<IEnumerable<IEndpoint>>();
 
@@ -34,12 +31,7 @@ public static class EndpointExtensions
 
         return app;
     }
-
-    public static RouteHandlerBuilder HasPermission(this RouteHandlerBuilder app, string permission)
-    {
-        return app.RequireAuthorization(permission);
-    }
-
+     
     public static RouteGroupBuilder WithVersioning(this WebApplication app, string prefix = "api")
     {
         IVersionedEndpointRouteBuilder version = app.NewVersionedApi();

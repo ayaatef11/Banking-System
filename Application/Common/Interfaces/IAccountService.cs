@@ -1,6 +1,3 @@
-using Domain.Accounts;
-using Shared;
-
 namespace Application.Common.Interfaces;
 
 public interface IAccountService

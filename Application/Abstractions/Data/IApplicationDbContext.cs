@@ -1,5 +1,3 @@
-using Domain.Accounts;
-using Domain.Transactions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 

@@ -9,6 +9,6 @@ global using Shared;
 global using Application.Common.Interfaces;
 global using Application.Dtos.Transaction;
 global using Domain.Transactions;
-
-
+global using Application.Abstractions.Behaviors;
+global using Application.Services;
 
