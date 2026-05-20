@@ -1,9 +1,3 @@
-using Application.Abstractions.Data;
-using Application.Common.Interfaces;
-using Application.Interfaces;
-using Application.Services;
-using Infrastructure.Database;
-using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
@@ -14,8 +8,7 @@ namespace Infrastructure;
 public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
-        => services
-            .AddServices()
+        => services.AddServices()
             .AddDatabase(configuration)
             .AddHealthChecks(configuration);
 

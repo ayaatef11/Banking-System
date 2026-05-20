@@ -45,7 +45,6 @@ public static class EndpointExtensions
     {
         IVersionedEndpointRouteBuilder version = app.NewVersionedApi();
         RouteGroupBuilder group = version.MapGroup($$"""/{{prefix}}/v{version:apiVersion}""")
-            .WithOpenApi()
             .HasApiVersion(new ApiVersion(1, 0));
 
         return group;

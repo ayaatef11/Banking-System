@@ -8,8 +8,6 @@ public static class DependencyInjection
     {
         services.AddMappings(typeof(DependencyInjection).Assembly);
         
-        services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
 
         return services;
     }

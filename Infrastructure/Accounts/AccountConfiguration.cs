@@ -1,4 +1,3 @@
-using Domain.Accounts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -12,9 +11,7 @@ internal sealed class AccountConfiguration : IEntityTypeConfiguration<Account>
 
         builder.HasKey(acc => acc.Id);
 
-        builder
-            .HasIndex(acc => acc.AccountNumber)
-            .IsUnique();
+        builder.HasIndex(acc => acc.AccountNumber).IsUnique();
 
         builder.Property(acc => acc.AccountType)
             .HasConversion<string>()
@@ -22,7 +19,6 @@ internal sealed class AccountConfiguration : IEntityTypeConfiguration<Account>
             .HasComment("The type of account: Savings, Checking, and Business.")
             .IsRequired();
 
-        builder.Property(acc => acc.Balance)
-            .HasPrecision(18, 2);
+        builder.Property(acc => acc.Balance).HasPrecision(18, 2);
     }
 }

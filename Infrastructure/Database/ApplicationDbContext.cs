@@ -1,6 +1,3 @@
-using Application.Abstractions.Data;
-using Domain.Accounts;
-using Domain.Transactions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Database;

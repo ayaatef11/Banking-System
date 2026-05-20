@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\2-back-end\\Banking_System\\Shared\\Shared.csproj": {}
+    "F:\\2-back-end\\5-Banking_System\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "F:\\2-back-end\\Banking_System\\Shared\\Shared.csproj": {
+    "F:\\2-back-end\\5-Banking_System\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\2-back-end\\Banking_System\\Shared\\Shared.csproj",
+        "projectUniqueName": "F:\\2-back-end\\5-Banking_System\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "F:\\2-back-end\\Banking_System\\Shared\\Shared.csproj",
+        "projectPath": "F:\\2-back-end\\5-Banking_System\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Aya Atef\\.nuget\\packages\\",
-        "outputPath": "F:\\2-back-end\\Banking_System\\Shared\\obj\\",
+        "outputPath": "F:\\2-back-end\\5-Banking_System\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
