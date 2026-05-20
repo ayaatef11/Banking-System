@@ -1,3 +1,5 @@
+using Domain.Accounts;
+
 namespace Application.Features.Transactions.Deposit;
 
 public sealed class DepositTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService): ICommandHandler<DepositTransactionCommand, TransactionResponse>
@@ -18,8 +20,7 @@ public sealed class DepositTransactionCommandHandler(IValidationService validati
             return Result.Failure<TransactionResponse>(validationResult.Error);
         }
 
-        accountService.Deposit(account, command.Amount);
-
+        account.Balance += command.Amount;
         return await transactionService.ProcessDepositAsync(account, command.Amount, cancellationToken);
     }
 }

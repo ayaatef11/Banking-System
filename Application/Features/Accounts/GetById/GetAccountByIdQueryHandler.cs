@@ -2,8 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application.Features.Accounts.GetById;
 
-public sealed class GetAccountByIdQueryHandler(IApplicationDbContext context)
-    : IQueryHandler<GetAccountByIdQuery, AccountResponse>
+public sealed class GetAccountByIdQueryHandler(IApplicationDbContext context): IQueryHandler<GetAccountByIdQuery, AccountResponse>
 {
     public async Task<Result<AccountResponse>> Handle(GetAccountByIdQuery query, CancellationToken cancellationToken)
     {

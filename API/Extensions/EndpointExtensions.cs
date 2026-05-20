@@ -12,8 +12,7 @@ public static class EndpointExtensions
         ServiceDescriptor[] serviceDescriptors = assembly
             .DefinedTypes
             .Where(type => type is { IsAbstract: false, IsInterface: false } &&type.IsAssignableTo(typeof(IEndpoint)))
-            .Select(type => ServiceDescriptor.Transient(typeof(IEndpoint), type))
-            .ToArray();
+            .Select(type => ServiceDescriptor.Transient(typeof(IEndpoint), type)).ToArray();
 
         services.TryAddEnumerable(serviceDescriptors);
 

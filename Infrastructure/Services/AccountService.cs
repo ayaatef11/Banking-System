@@ -9,7 +9,6 @@ public class AccountService(IApplicationDbContext context) : IAccountService
         return await context.Accounts.FirstOrDefaultAsync(account => account.Id == accountId, cancellationToken);
     }
 
-    public void Deposit(Account account, decimal amount) => account.Balance += amount;
 
     public Result Withdraw(Account account, decimal amount)
     {

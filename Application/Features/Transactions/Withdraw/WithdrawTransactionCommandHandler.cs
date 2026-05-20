@@ -1,7 +1,6 @@
 namespace Application.Features.Transactions.Withdraw;
 
-public sealed class WithdrawTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService)
-    : ICommandHandler<WithdrawTransactionCommand, TransactionResponse>
+public sealed class WithdrawTransactionCommandHandler(IValidationService validationService,IAccountService accountService,ITransactionService transactionService): ICommandHandler<WithdrawTransactionCommand, TransactionResponse>
 {
     public async Task<Result<TransactionResponse>> Handle(WithdrawTransactionCommand command,CancellationToken cancellationToken)
     {

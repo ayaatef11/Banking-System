@@ -4,7 +4,7 @@ using Serilog;
 
 namespace Application.Features.Transactions.Transfer;
 
-internal sealed class TransferTransactionCommandHandler(IApplicationDbContext context,TimeProvider timeProvider,ILogger logger)
+internal sealed class TransferTransactionCommandHandler(IApplicationDbContext context,ILogger logger)
     : ICommandHandler<TransferTransactionCommand, TransferResponse>
 {
     public async Task<Result<TransferResponse>> Handle(TransferTransactionCommand command,CancellationToken cancellationToken)
@@ -50,7 +50,7 @@ internal sealed class TransferTransactionCommandHandler(IApplicationDbContext co
                 Type = TransactionType.Transfer,
                 Amount = -command.Amount,
                 TargetAccountNumber = targetAccount.AccountNumber,
-                CreatedAt = timeProvider.GetUtcNow()
+                CreatedAt = DateTime.UtcNow
             };
 
             sourceAccount.Balance -= command.Amount;
@@ -63,7 +63,7 @@ internal sealed class TransferTransactionCommandHandler(IApplicationDbContext co
                 Type = TransactionType.Transfer,
                 Amount = command.Amount,
                 TargetAccountNumber = sourceAccount.AccountNumber,
-                CreatedAt = timeProvider.GetUtcNow()
+                CreatedAt = DateTime.UtcNow
             };
 
             targetAccount.Balance += command.Amount;

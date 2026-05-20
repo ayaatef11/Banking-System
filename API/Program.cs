@@ -11,7 +11,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console().CreateLogger();
 
 builder.Host.UseSerilog();
-builder.Services.AddApiVersioning();
+builder.Services.AddVersioning();
 
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();

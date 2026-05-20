@@ -3,54 +3,20 @@
   "WorkspaceRootPath": "F:\\2-back-end\\5-Banking_System\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\resultextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\applicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\applicationbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\migrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\migrationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C89F7701-1230-045D-AC93-AE7F7C59B668}|..\\Infrastructure\\Infrastructure.csproj|f:\\2-back-end\\5-banking_system\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E130A0F6-DB74-40AF-88CA-36E7B214A023}|..\\Application\\Application.csproj|f:\\2-back-end\\5-banking_system\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:extensions\\endpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\endpoints\\accounts\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:endpoints\\accounts\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|f:\\2-back-end\\5-banking_system\\api\\middleware\\requestcontextloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D0AF179-E360-47DD-B275-E1FFFCFE63E8}|Banking_System.csproj|solutionrelative:middleware\\requestcontextloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,28 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T18:38:10.916Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:8:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MigrationExtensions.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\MigrationExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\MigrationExtensions.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\MigrationExtensions.cs",
-              "RelativeToolTip": "Extensions\\MigrationExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "DependencyInjection.cs",
+              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\DependencyInjection.cs",
+              "RelativeToolTip": "DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T11:13:48.651Z",
+              "WhenOpened": "2026-05-20T18:38:02.676Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -89,159 +64,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-20T11:04:33.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\ServiceCollectionExtensions.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ServiceCollectionExtensions.cs*",
-              "RelativeToolTip": "Extensions\\ServiceCollectionExtensions.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T11:01:11.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResultExtensions.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ResultExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\ResultExtensions.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ResultExtensions.cs",
-              "RelativeToolTip": "Extensions\\ResultExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T11:01:29.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ApplicationBuilderExtensions.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ApplicationBuilderExtensions.cs",
-              "RelativeDocumentMoniker": "Extensions\\ApplicationBuilderExtensions.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\ApplicationBuilderExtensions.cs*",
-              "RelativeToolTip": "Extensions\\ApplicationBuilderExtensions.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:59:19.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "..\\Application\\DependencyInjection.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\Application\\DependencyInjection.cs",
-              "RelativeToolTip": "..\\Application\\DependencyInjection.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:59:00.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Create.cs",
               "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Endpoints\\Accounts\\Create.cs",
               "RelativeDocumentMoniker": "Endpoints\\Accounts\\Create.cs",
               "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Endpoints\\Accounts\\Create.cs",
               "RelativeToolTip": "Endpoints\\Accounts\\Create.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvwQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:41:50.018Z",
+              "WhenOpened": "2026-05-20T18:35:00.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "EndpointExtensions.cs",
               "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\EndpointExtensions.cs",
               "RelativeDocumentMoniker": "Extensions\\EndpointExtensions.cs",
               "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Extensions\\EndpointExtensions.cs*",
               "RelativeToolTip": "Extensions\\EndpointExtensions.cs*",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:39:37.659Z",
+              "WhenOpened": "2026-05-20T17:12:33.146Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 466,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "..\\Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBsAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:16:40.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:15:30.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "GlobalUsings.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\GlobalUsings.cs",
-              "RelativeToolTip": "GlobalUsings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:15:22.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "DependencyInjection.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\DependencyInjection.cs",
-              "RelativeToolTip": "DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:15:02.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RequestContextLoggingMiddleware.cs",
-              "DocumentMoniker": "F:\\2-back-end\\5-Banking_System\\API\\Middleware\\RequestContextLoggingMiddleware.cs",
-              "RelativeDocumentMoniker": "Middleware\\RequestContextLoggingMiddleware.cs",
-              "ToolTip": "F:\\2-back-end\\5-Banking_System\\API\\Middleware\\RequestContextLoggingMiddleware.cs",
-              "RelativeToolTip": "Middleware\\RequestContextLoggingMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T10:14:59.018Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }

@@ -1,8 +1,6 @@
 namespace Application.Features.Accounts.Create;
 
-public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IAccountNumberGenerator accountNumberGenerator,
-    TimeProvider timeProvider,
-    IGuidGenerator guidGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
+public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IAccountNumberGenerator accountNumberGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
 {
     public async Task<Result<AccountResponse>> Handle(CreateAccountCommand command, CancellationToken cancellationToken)
     {
@@ -18,12 +16,12 @@ public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IA
 
         var account = new Account
         {
-            Id = guidGenerator.NewGuid(),
+            Id = Guid.NewGuid(),
             OwnerName = command.OwnerName,
             AccountNumber = accountNumberGenerator.Generate(),
             AccountType = command.AccountType,
             Balance = AccountConstants.MinBalance,
-            CreatedAt = timeProvider.GetUtcNow()
+            CreatedAt = DateTime.UtcNow
         };
 
         context.Accounts.Add(account);

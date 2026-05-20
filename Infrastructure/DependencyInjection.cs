@@ -18,7 +18,6 @@ public static class DependencyInjection
         services.AddScoped<ITransactionService, TransactionService>();
 
         services.AddSingleton(TimeProvider.System);
-        services.AddSingleton<IGuidGenerator, GuidGenerator>();
 
         return services;
     }
