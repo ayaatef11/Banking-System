@@ -8,13 +8,7 @@ internal sealed class TransferTransactionCommandHandler(IApplicationDbContext co
     : ICommandHandler<TransferTransactionCommand, TransferResponse>
 {
     public async Task<Result<TransferResponse>> Handle(TransferTransactionCommand command,CancellationToken cancellationToken)
-    {
-        if (command.Amount <= TransactionConstants.MinTransactionAmount)
-        {
-            logger.Warning("Amount must be greater than {Amount}.", command.Amount);
-            return Result.Failure<TransferResponse>(TransactionError.InvalidAmount(command.Amount));
-        }
-
+    { 
         Account? sourceAccount =await context.Accounts.FirstOrDefaultAsync(acc => acc.Id == command.AccountId,cancellationToken);
 
         if (sourceAccount == null)
@@ -80,9 +74,7 @@ internal sealed class TransferTransactionCommandHandler(IApplicationDbContext co
         catch (Exception ex)
         {
             logger.Error(ex,"Failed to process withdrawal for sourceAccount {AccountId}: {Message}",command.AccountId,ex.Message);
-
             await transaction.RollbackAsync(cancellationToken);
-
             return Result.Failure<TransferResponse>(TransactionError.Failed(ex.Message));
         }
     }

@@ -7,9 +7,7 @@ public sealed class GetAccountByIdQueryHandler(IApplicationDbContext context,IMa
 {
     public async Task<Result<AccountResponse>> Handle(GetAccountByIdQuery query, CancellationToken cancellationToken)
     {
-        Account? account = await context.Accounts
-            .AsNoTracking()
-            .SingleOrDefaultAsync(c => c.Id == query.AccountId, cancellationToken);
+        Account? account = await context.Accounts.AsNoTracking().SingleOrDefaultAsync(c => c.Id == query.AccountId, cancellationToken);
 
         if (account is null)
         {

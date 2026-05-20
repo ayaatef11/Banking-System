@@ -19,7 +19,7 @@ public class TransferTransactionCommandValidator : AbstractValidator<TransferTra
             .WithMessage("Amount should not be null.")
             .GreaterThan(0)
             .WithMessage("Amount must be greater than zero.")
-            .LessThan(1000000M)
+            .LessThanOrEqualTo(TransactionConstants.MinTransactionAmount)
             .WithMessage("Amount must be less than 1 billion.")
             .PrecisionScale(18, 2, true)
             .WithMessage("Amount must have a maximum of 2 decimal places and a maximum of 18 digits in total.")

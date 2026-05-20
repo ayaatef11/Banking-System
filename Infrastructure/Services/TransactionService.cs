@@ -23,7 +23,6 @@ public class TransactionService(IApplicationDbContext context, IMapper<Transacti
                 TargetAccountNumber = account.AccountNumber,
                 CreatedAt = DateTime.UtcNow
             };
-
             context.Transactions.Add(deposit);
             await context.SaveChangesAsync(cancellationToken);
             await transaction.CommitAsync(cancellationToken);
@@ -39,8 +38,7 @@ public class TransactionService(IApplicationDbContext context, IMapper<Transacti
 
             logger.Error(ex,
                 "Failed to process deposit for account {AccountId}: {Message}",
-                account.Id,
-                ex.Message);
+                account.Id,ex.Message);
 
             return Result.Failure<TransactionResponse>(TransactionError.Failed(ex.Message));
         }
