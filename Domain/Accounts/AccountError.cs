@@ -1,5 +1,3 @@
-using Shared;
-
 namespace Domain.Accounts;
 
 public static class AccountError
@@ -11,8 +9,7 @@ public static class AccountError
             return Error.NotFound($"{nameof(Account)}.NotFound", "Account was not found.");
         }
 
-        return accountId.HasValue
-            ? Error.NotFound($"{nameof(Account.Id)}.NotFound", $"Account with ID '{accountId}' was not found.")
+        return accountId.HasValue? Error.NotFound($"{nameof(Account.Id)}.NotFound", $"Account with ID '{accountId}' was not found.")
             : Error.NotFound($"{nameof(Account.AccountNumber)}.NotFound", $"Account with number '{accountNumber}' was not found.");
     }
 

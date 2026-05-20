@@ -1,5 +1,3 @@
-using Shared;
-
 namespace Domain.Transactions;
 
 public static class TransactionError
@@ -11,6 +9,5 @@ public static class TransactionError
     public static Error InsufficientBalance(decimal balance, decimal amount) => Error.Failure(
         $"{nameof(Transaction)}.InsufficientFunds",$"Account balance {balance} is insufficient for withdrawal amount {amount}.");
 
-    public static Error InvalidAmount(decimal amount) => Error.Failure($"{nameof(Transaction)}.InvalidAmount",$"{amount} must be greater than zero."
-    );
+    public static Error InvalidAmount(decimal amount) => Error.Failure($"{nameof(Transaction)}.InvalidAmount",$"{amount} must be greater than zero.");
 }

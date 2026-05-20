@@ -1,5 +1,4 @@
 namespace Domain.Constants;
-
 public static class TransactionConstants
 {
     public const decimal MaxTransactionAmount = 100000M;

@@ -1,5 +1,3 @@
-using Domain.Transactions;
-
 namespace Domain.Accounts;
 
 public sealed class Account
