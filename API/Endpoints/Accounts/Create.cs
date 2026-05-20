@@ -6,8 +6,7 @@ internal sealed class Create : IEndpoint
 {
     public void MapEndpoint(IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapPost("/accounts",
-                async (CreateAccountRequest request, ISender sender,
+        endpoints.MapPost("/accounts",async (CreateAccountRequest request, ISender sender,
                     IMapper<CreateAccountRequest, CreateAccountCommand> mapper, CancellationToken cancellationToken) =>
                 {
                     CreateAccountCommand command = mapper.Map(request);

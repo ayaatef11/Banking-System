@@ -4,12 +4,10 @@ namespace Application.Features.Transactions.History;
 
 internal sealed class GetTransactionHistoryQueryHandler(IApplicationDbContext context): IQueryHandler<GetTransactionHistoryQuery, TransactionHistoryResponse>
 {
-    public async Task<Result<TransactionHistoryResponse>> Handle(GetTransactionHistoryQuery request,
-        CancellationToken cancellationToken)
+    public async Task<Result<TransactionHistoryResponse>> Handle(GetTransactionHistoryQuery request,CancellationToken cancellationToken)
     {
         IQueryable<Transaction> query = context.Transactions
-            .AsNoTracking()
-            .Where(t => t.AccountId == request.AccountId);
+            .AsNoTracking().Where(t=>t.AccountId==request.AccountId);
 
         if (request.Type is not null)
         {

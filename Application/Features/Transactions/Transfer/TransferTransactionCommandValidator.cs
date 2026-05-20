@@ -7,12 +7,14 @@ public class TransferTransactionCommandValidator : AbstractValidator<TransferTra
     public TransferTransactionCommandValidator()
     {
         RuleFor(transferCommand => transferCommand.AccountId)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty()
             .WithMessage("Account ID is required.")
             .Must(id => Guid.TryParse(id.ToString(), out _))
             .WithMessage("Account ID must be a valid GUID.");
         
         RuleFor(transferCommand => transferCommand.Amount)
+            .Cascade(CascadeMode.Stop)  
             .NotNull()
             .WithMessage("Amount should not be null.")
             .GreaterThan(0)

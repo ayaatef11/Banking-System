@@ -7,6 +7,7 @@ public class WithdrawTransactionCommandValidator : AbstractValidator<WithdrawTra
     public WithdrawTransactionCommandValidator()
     {
         RuleFor(withDrawTransactionCommand => withDrawTransactionCommand.AccountId)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty()
             .WithMessage("Account ID is required.")
             .Must(id => Guid.TryParse(id.ToString(), out _))

@@ -7,6 +7,7 @@ public class CreateAccountCommandValidator : AbstractValidator<CreateAccountComm
     public CreateAccountCommandValidator()
     {
         RuleFor(createAccountCommand => createAccountCommand.OwnerName)
+            .Cascade(CascadeMode.Stop)
             .NotNull()
             .WithMessage("Owner name cannot be null.")
             .NotEmpty()
@@ -24,6 +25,7 @@ public class CreateAccountCommandValidator : AbstractValidator<CreateAccountComm
 
 
         RuleFor(createAccountCommand => createAccountCommand.AccountType)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty()
             .WithMessage("Account type is required.")
             .IsInEnum()

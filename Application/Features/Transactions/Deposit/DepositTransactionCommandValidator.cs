@@ -7,12 +7,14 @@ public class DepositTransactionCommandValidator : AbstractValidator<DepositTrans
     public DepositTransactionCommandValidator()
     {
         RuleFor(depositTransactionCommand => depositTransactionCommand.AccountId)
+            .Cascade(CascadeMode.Stop)
             .NotEmpty()
             .WithMessage("Account ID is required.")
             .Must(id => Guid.TryParse(id.ToString(), out _))
             .WithMessage("Account ID must be a valid GUID.");
         
         RuleFor(depositTransactionCommand => depositTransactionCommand.Amount)
+            .Cascade(CascadeMode.Stop)
             .NotNull()
             .WithMessage("Amount should not be null.")
             .GreaterThan(0)

@@ -3,17 +3,7 @@ namespace Application.Features.Accounts.Create;
 public sealed class CreateAccountCommandHandler(IApplicationDbContext context,IAccountNumberGenerator accountNumberGenerator) : ICommandHandler<CreateAccountCommand, AccountResponse>
 {
     public async Task<Result<AccountResponse>> Handle(CreateAccountCommand command, CancellationToken cancellationToken)
-    {
-        if (string.IsNullOrWhiteSpace(command.OwnerName))
-        {
-            return Result.Failure<AccountResponse>(AccountError.Required(nameof(command.OwnerName)));
-        }
-
-        if (!Enum.IsDefined(command.AccountType))
-        {
-            return Result.Failure<AccountResponse>(AccountError.Required(nameof(command.AccountType)));
-        }
-
+    { 
         var account = new Account
         {
             Id = Guid.NewGuid(),

@@ -21,11 +21,11 @@ public static class DependencyInjection
     private static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration configuration)
     {
         string? connectionString = configuration.GetConnectionString("Database");
-
+        //it configures options , booling and internal services 
         services.AddDbContext<ApplicationDbContext>(
             options => options.UseSqlServer(connectionString, sqlServerOptions =>
                     sqlServerOptions.MigrationsHistoryTable(HistoryRepository.DefaultTableName)));
-
+        //reuse same dbcontext not register it again
         services.AddScoped<IApplicationDbContext>(sp => sp.GetRequiredService<ApplicationDbContext>());
 
         return services;
