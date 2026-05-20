@@ -1,6 +1,6 @@
-# Mini Banking System
+# Banking System
 
-The **mini-banking-system** is a modular, scalable banking backend application built with **.NET**, designed following **Clean Architecture, CQRS, SOLID principles, and Test-Driven Development (TDD)**.
+It is a modular, scalable banking backend application built with **.NET**, designed following **Clean Architecture, CQRS, and  SOLID principles**.
 
 ---
 
@@ -60,24 +60,6 @@ The **mini-banking-system** is a modular, scalable banking backend application b
 
 ---
 
-##  Tests
-
-### `tests/`
-
-- **Unit/**: Unit tests for each layer and feature
-    - **Common/**: Shared base test classes (`BaseTest.cs`, `GlobalUsings.cs`)
-    - **Features/**
-        - **Accounts/**
-            - `CreateAccountCommandHandlerTests.cs`
-            - `GetAccountByIdQueryHandlerTests.cs`
-            - `GetAccountQueryHandlerTests.cs`
-        - **Transactions/**
-            - `DepositTransactionCommandHandlerTests.cs`
-            - `WithdrawTransactionCommandHandlerTests.cs`
-    - **Infrastructure/**:
-        - `LayerTest.cs`: Infrastructure Layer tests
-
----
 
 ##  CI/CD - `.github/`
 
