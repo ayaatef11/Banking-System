@@ -4,14 +4,12 @@ The **mini-banking-system** is a modular, scalable banking backend application b
 
 ---
 
-## 📚 Project Structure
+##  Project Structure
 
-### `src/`
-Contains all production code, divided by logical layers.
 
 ---
 
-### 🔹 `Application/`
+###  `Application/`
 
 - **Abstractions/**: Pipeline behaviors, interfaces for data access and messaging
 - **Common/**: Core service interfaces and mappings
@@ -23,7 +21,7 @@ Contains all production code, divided by logical layers.
 
 ---
 
-### 🔹 `Domain/`
+###  `Domain/`
 
 - **Accounts/**: Account entity and related enums
 - **Transactions/**: Transaction entity and related enums
@@ -32,7 +30,7 @@ Contains all production code, divided by logical layers.
 
 ---
 
-### 🔹 `Infrastructure/`
+###  `Infrastructure/`
 
 - **Database/**: EF Core DbContext and Migrations
 - **Services/**: Concrete service implementations (e.g., `AccountService`, `TransactionService`)
@@ -41,7 +39,7 @@ Contains all production code, divided by logical layers.
 
 ---
 
-### 🔹 `Shared/`
+###  `Shared/`
 
 - **Shared result types and error handling:**
 - Result.cs, Error.cs, ErrorType.cs, ValidatorError.cs
@@ -62,7 +60,7 @@ Contains all production code, divided by logical layers.
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 ### `tests/`
 
@@ -81,7 +79,7 @@ Contains all production code, divided by logical layers.
 
 ---
 
-## 🔄 CI/CD - `.github/`
+##  CI/CD - `.github/`
 
 GitHub Actions workflows for automating:
 
@@ -90,11 +88,11 @@ GitHub Actions workflows for automating:
 
 ---
 
-# ✅ Summary
+#  Summary
 
 This project follows:
 
-- Clean Architecture 🧹
-- Separation of Concerns 📚
-- Test-Driven Development (TDD) 🧪
-- SOLID Principles 🛠️
+- Clean Architecture 
+- Separation of Concerns 
+- Test-Driven Development (TDD) 
+- SOLID Principles 
